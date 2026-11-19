@@ -107,4 +107,7 @@ int main()
 	Figure *userBox = new Square(size, ifFilled == 'f'? 
 		static_cast<Fill *>(new Filled(fchar)):
 		static_cast<Fill *>(new Hollow(fchar)));
+
+	cout << endl;
+	userBox->draw();
 }
